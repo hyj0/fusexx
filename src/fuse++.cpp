@@ -231,7 +231,7 @@ public:
   static int bmap(const char *pathname, size_t blocksize, uint64_t *idx) {
     return fuse().bmap(pathname, blocksize, idx);
   }
-  static int ioctl(const char *pathname, int cmd, void *arg,
+  static int ioctl(const char *pathname, unsigned int cmd, void *arg,
                    struct fuse_file_info *fi, unsigned int flags, void *data) {
     return fuse().ioctl(pathname, cmd, arg, fi, flags, data);
   }

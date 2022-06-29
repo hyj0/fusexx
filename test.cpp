@@ -1,3 +1,4 @@
+#define FUSE_VERSION 31
 #include "fuse++"
 
 #include <cerrno>
@@ -187,4 +188,6 @@ public:
   }
 };
 
-int main(int argc, char *argv[]) { return FS().main(argc, argv); }
+int main(int argc, char *argv[]) {
+    return FS().main(argc, argv);
+}
